@@ -7,7 +7,7 @@ A Python script to export your **MUBI watchlist** and **ratings** into CSV files
 ## ⚡ Features
 
 - Export your MUBI **watchlist** (wishes) and **ratings**.  
-- Optional **Letterboxd-compatible CSV output** that can be imported directly into Letterboxd reviews or watchlist.  
+- Optional **Letterboxd-compatible CSV output** that can be imported directly into Letterboxd reviews or watchlist (see https://letterboxd.com/about/importing-data/) 
 
 ---
 
