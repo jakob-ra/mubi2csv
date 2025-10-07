@@ -16,7 +16,7 @@ A Python script to export your **MUBI watchlist** and **ratings** into CSV files
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/mubi-export.git
+git clone https://github.com/jakob-ra/mubi2csv.git
 cd mubi-export
 ````
 
