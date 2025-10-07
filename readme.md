@@ -23,7 +23,7 @@ cd mubi-export
 2. Install dependencies:
 
 ```bash
-pip install requests pandas
+pip install requirements.txt
 ```
 
 *(Python 3.8+ recommended)*
