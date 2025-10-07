@@ -1,4 +1,4 @@
-# 🎬 MUBI Export Script
+# 🎬 MUBI User Data CSV Export
 
 A Python script to export your **MUBI watchlist** and **ratings** into CSV files, with optional **Letterboxd-compatible** formatting. Perfect for archiving your movie activity or migrating data.  
 
