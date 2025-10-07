@@ -1,19 +1,6 @@
-#!/usr/bin/env python3
-"""
-mubi_export_fixed.py
-
-Fetch a MUBI user's watchlist (wishes) and ratings via the internal API and write CSVs.
-
-Usage:
-    python mubi_export_fixed.py <user_id> [--token TOKEN] [--per-page N] [--country NL] [--debug]
-
-Example:
-    python mubi_export_fixed.py 4529031 --country NL --debug
-"""
-
 import requests
 import time
-import csv
+import csv as _csv
 import sys
 import argparse
 import uuid
@@ -22,8 +9,6 @@ import pandas as pd
 from ast import literal_eval
 
 BASE = "https://api.mubi.com/v4/users/{user_id}/{endpoint}"
-
-
 def debug_print(debug: bool, *args, **kwargs):
     if debug:
         print(*args, **kwargs)
@@ -229,17 +214,11 @@ def write_csv(path: str, rows: List[Dict[str, Any]]):
             if k not in keys:
                 keys.append(k)
     with open(path, "w", newline="", encoding="utf-8") as f:
-        import csv as _csv
         writer = _csv.DictWriter(f, fieldnames=keys)
         writer.writeheader()
         for r in rows:
             writer.writerow(r)
     print(f"Wrote {len(rows)} rows to {path}")
-
-
-import pandas as pd
-from ast import literal_eval
-
 
 def clean_output(csv_path, letterboxd=False):
     is_ratings = 'ratings' in csv_path
