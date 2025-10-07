@@ -1,6 +1,3 @@
-Here's a clean, GitHub-style `README.md` tailored for your MUBI export script project, including icons, installation, usage, and optional features:
-
-````markdown
 # 🎬 MUBI Export Script
 
 A Python script to export your **MUBI watchlist** and **ratings** into CSV files, with optional **Letterboxd-compatible** formatting. Perfect for archiving your movie activity or migrating data.  
