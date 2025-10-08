@@ -9,6 +9,7 @@ import pandas as pd
 from ast import literal_eval
 
 BASE = "https://api.mubi.com/v4/users/{user_id}/{endpoint}"
+
 def debug_print(debug: bool, *args, **kwargs):
     if debug:
         print(*args, **kwargs)
