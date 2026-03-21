@@ -17,13 +17,13 @@ A Python script to export your **MUBI watchlist** and **ratings** into CSV files
 
 ```bash
 git clone https://github.com/jakob-ra/mubi2csv.git
-cd mubi-export
+cd mubi2csv
 ````
 
 2. Install dependencies:
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 *(Python 3.8+ recommended)*
